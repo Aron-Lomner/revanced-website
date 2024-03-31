@@ -4,6 +4,7 @@
 	import SocialHost from '$layout/Hero/SocialHost.svelte';
 	import Wave from '$lib/components/Wave.svelte';
 	import Head from '$lib/components/Head.svelte';
+	import Footer from '$layout/Footer/FooterHost.svelte';
 </script>
 
 <Head
@@ -127,7 +128,9 @@
 	<SocialHost />
 </main>
 <Wave />
-
+<div class="footer">
+	<Footer />
+</div>
 <style>
 	.wrap {
 		margin-inline: auto;
@@ -141,6 +144,12 @@
 		justify-content: center;
 		gap: 22rem;
 		align-items: center;
+	}
+	.footer {
+		background-color: var(--bg-color);
+		padding-top: 4rem;
+		position: absolute;
+		top: 100%;
 	}
 	@media (max-width: 1700px) {
 		.wrappezoid {
